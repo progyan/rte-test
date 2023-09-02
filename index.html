@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Race to Escape</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="code-enter">
+            <h2 id="money-left">$ makak</h2>
+            <h1 id="code-value">....</h1>
+            <table id="knopyk">
+                <tr>
+                    <td><button onclick="addNumber(1)">1</button></td>
+                    <td><button onclick="addNumber(2)">2</button></td>
+                    <td><button onclick="addNumber(3)">3</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(4)">4</button></td>
+                    <td><button onclick="addNumber(5)">5</button></td>
+                    <td><button onclick="addNumber(6)">6</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(7)">7</button></td>
+                    <td><button onclick="addNumber(8)">8</button></td>
+                    <td><button onclick="addNumber(9)">9</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="deleteNumber()">DELETE</button></td>
+                    <td><button onclick="addNumber(0)">0</button></td>
+                    <td><button onclick="checkCode()">CHECK</button></td>
+                </tr>
+            </table>
+        </section>
+        <section id="get-clues">
+            <h1 id="time-left">60:00:00</h1>
+            <div id="clue">
+                <h1 id="clue-title">CLUE 1</h1>
+                <p id="clue-text">
+                    A pisq man lives in the sky,<br>
+                    That's just because he learnt to fly.
+                </p>
+                <div id="breaker">
+                    <h1 id="buy-breaker" onclick="buyBreaker()">CB</h1>
+                    <p id="cb-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <div id="curtain"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
